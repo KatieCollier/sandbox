@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'alpha_echoregular';
+    src: url('font/alpha_echo-webfont.eot');
+    src: url('font/alpha_echo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/alpha_echo-webfont.woff2') format('woff2'),
+         url('font/alpha_echo-webfont.woff') format('woff'),
+         url('font/alpha_echo-webfont.ttf') format('truetype'),
+         url('font/alpha_echo-webfont.svg#alpha_echoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1
+{
+	color: #fc0993;
+	text-align: center;
+	font-family: "alpha_echoregular";
+	text-shadow: 6px 6px 6px #09FC72;
+    font-size: 4em;
+}
+
+body
+{
+	background-image: url("images/tartan.gif");
+	color: #3c1248;
+}
+
+ul
+{
+	border-left: 4px #fc0993 solid;
+}
+
+#main_text p
+{
+    text-align: justify;
+}
+
+/* Mise en page */
+/* Ajout du lisere */
+#page
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#lisere
+{
+    width: 150px;
+    background-color: #3281bc;
+}
+
+#header
+{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 5px;
+    align-items: center;
+}
+
+#photo
+{
+    flex: 1;
+}
+
+#title
+{
+    flex: 5;
+}
+
+#text
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10%;
+}
+
+#disciplines
+{
+    width: 20%;
+}
+
+#voyages
+{
+    width: 20%;
+}
+
+#qualites
+{
+    width: 20%;
+}
+
+@media all and (max-width: 1024px)
+{
+    #lisere
+    {
+        display: none;
+    }
+
+    #text
+    {
+        flex-direction: column;
+    }
+
+    #disciplines
+    {
+        width: 90%;
+    }
+
+    #voyages
+    {
+        width: 90%;
+    }
+
+    #qualites
+    {
+        width: 90%;
+    }
+}

@@ -61,6 +61,13 @@ ul
 #photo
 {
     flex: 1;
+    padding: 0%;
+}
+
+#small_photo
+{
+    border: 5px purple solid;
+    border-radius: 50%;
 }
 
 #title
